@@ -1,0 +1,10 @@
+#!/bin/bash
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+if [ ! -f /var/run/opensips.pid ] ;
+then
+echo "Opensips not running"
+exit 2
+else
+echo "Opensips Running"
+exit 0
+fi

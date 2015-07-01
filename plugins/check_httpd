@@ -1,0 +1,10 @@
+#!/bin/bash
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+if [ ! -f /var/run/httpd/httpd.pid ] ;
+then
+echo "Http not running"
+exit 2
+else
+echo "Http Running"
+exit 0
+fi

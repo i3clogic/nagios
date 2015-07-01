@@ -1,0 +1,10 @@
+#!/bin/bash
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+if [ ! -f /var/run/mysqld/mysqld.pid ] ;
+then
+echo "Mysql not running"
+exit 2
+else
+echo "Mysql Running"
+exit 0
+fi

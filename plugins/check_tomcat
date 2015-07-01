@@ -1,0 +1,11 @@
+#!/bin/bash
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin
+a=`ps aux | grep java | grep -v grep | wc -l`
+if [ $a -ne 0 ] ;
+then
+echo "Tomcat running"
+exit 0
+else
+echo "Tomcat Not Running"
+exit 2
+fi
